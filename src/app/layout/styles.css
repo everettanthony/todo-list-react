@@ -1,0 +1,139 @@
+html, body {
+  height: 100vh;
+}
+
+body {
+  background-color: #e3e3e3;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1127px;
+}
+
+.todos {
+  background-color: #fff;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  min-width: 450px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.ui.input>input.todos-input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.ui.loader.loader-hdr {
+  left: auto;
+  position: absolute;
+  right: 15px;
+  top: 11px;
+}
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.28571429em;
+  justify-content: center;
+  margin: 0;
+  min-height: 234px;
+  position: relative;
+}
+
+.todos-list .todos-item {
+  padding: 1rem 1.25rem;
+}
+
+.todos-item:not(:last-child) {
+  border-bottom: 1px solid rgba(34,36,38,.15);
+}
+
+.todos-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todos-content .icon.close {
+  color: #cb1a1a;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+}
+
+.todos-content .ui.checkbox label {
+  font-size: 1.1em;
+}
+
+.ui.checkbox label:after {
+  content: '\e800';
+  color: #26af63;
+  font-family: Checkbox;
+  opacity: 0;
+}
+
+.item-completed .ui.checkbox label:after {
+  opacity: 1;
+}
+
+.footer {
+  border-top: 1px solid #c0c0c0;
+  padding: 1em 1.25em;
+}
+
+.footer-row {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-count {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .85rem;
+}
+
+.filters {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em 0;
+  width: 100%;
+}
+
+.filters-hdr {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .85rem;
+}
+
+.ui.button {
+  background-color: #5b89e4;
+  color: #fff;
+  transition: background-color 200ms ease-in-out;
+}
+
+.ui.button:hover,
+.ui.button:focus,
+.ui.button:active {
+  background-color: #4373d3;
+  color: #fff;
+}
+
+.ui.button.filters-btn {
+  background-color: #50c7b1;
+}
+
+.ui.button.filters-btn:hover,
+.ui.button.filters-btn:focus,
+.ui.button.filters-btn:active,
+.ui.button.filters-btn.selected {
+  background-color: #33a993;
+}
